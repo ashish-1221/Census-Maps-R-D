@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<!--<!DOCTYPE metadata SYSTEM "http://www.esri.com/metadata/esriprof80.dtd">-->
+<metadata xml:lang="en"><Esri><MetaID>{02FFF5D5-21D8-4E6D-BC5D-768DAE787906}</MetaID><CreaDate>20140424</CreaDate><CreaTime>17040200</CreaTime><SyncOnce>TRUE</SyncOnce><DataProperties><lineage><Process ToolSource="C:\Program Files\ArcGIS\ArcToolbox\Toolboxes\Data Management Tools.tbx\DeleteField" Date="20140424" Time="170402">DeleteField VILLAGE_TOWN AREA;PERIMETER;DISVIL_;DISVIL_ID;C_CODE11;AREA_1;PERIMETE_1;GUJPNTFN_;GUJPNTFN_I;GUJ_ID;VILL_SDM_I;PINCODE;S_SUB_LOC;SUB_LOC;NAME01;SUB_DIST01;DISTRICT01;C_CODE01;LEVEL01;XX;YY;PC_INDIA;OID1 VILLAGE_TOWN</Process></lineage></DataProperties></Esri></metadata>

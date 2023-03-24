@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<!--<!DOCTYPE metadata SYSTEM "http://www.esri.com/metadata/esriprof80.dtd">-->
+<metadata xml:lang="en"><Esri><MetaID>{20D2F6CD-A324-4BCF-B479-C50C497AB5C0}</MetaID><CreaDate>20140424</CreaDate><CreaTime>13162000</CreaTime><SyncOnce>TRUE</SyncOnce><DataProperties><lineage><Process ToolSource="C:\Program Files\ArcGIS\ArcToolbox\Toolboxes\Data Management Tools.tbx\DeleteField" Date="20140424" Time="131620">DeleteField AC_POST AREA;PERIMETER;PTC_;PTC_ID;PC AC_POST</Process></lineage></DataProperties></Esri></metadata>
