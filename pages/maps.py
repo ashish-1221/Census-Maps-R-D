@@ -3,8 +3,6 @@ import streamlit as st
 import pandas as pd
 import geopandas as gd
 import numpy as np
-import folium
-from streamlit_folium import  folium_static
 from scipy.spatial import cKDTree
 from maps_class import *
 import os.path
