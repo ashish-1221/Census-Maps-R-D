@@ -1,6 +1,5 @@
 import streamlit as st
 from gdrive import *
-import pydeck as pdk
 import geopandas as gd
 import os
 import pandas as pd
