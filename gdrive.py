@@ -23,7 +23,7 @@ SCOPES = ['https://www.googleapis.com/auth/drive.metadata.readonly',
 
 # Function to download a specific file and store in a specific path based on fileinfo
 # StandAlone FUnction to prevent redownloading again and again
-@st.cache_data(persist="disk")
+
 def export_the_file(fileinfo, folder_path):
     print(f"\n\n{fileinfo}")
     if os.path.exists('token.json'):
