@@ -165,9 +165,10 @@ with st.container():
         # Base Retro Data of the required_file (AC Filtered)
         base_retro_excel_list = drive_object.search_a_folder_q_param(
             f"mimeType='text/csv' and '{base_retro_folder_id}' in parents")
+        print(base_retro_excel_list)
         for file in base_retro_excel_list:
             if str(st_name) in file['name']:
-                if str(election_year) in file['name'] or str(election_type) in file['name']:
+                if str(election_year) in file['name'] :
                     base_retro_file_info = file
         print("\n\n Base Retro File Found")
         print(base_retro_file_info)
@@ -179,7 +180,6 @@ with st.container():
         ac_mapping_file = export_the_file(ac_mapping_file_info,mapping_file_folder_path)
         print("Reading Base Retro File")
         base_retro_data = export_the_file(base_retro_file_info,base_retro_folder_path)
-
         ## Calling the Mandal Maps Function to plot a map
         
         
@@ -198,10 +198,21 @@ with st.container():
         #ac_mapping_file,vill_shp = mandal_map.rename()
         print("\n\nStep_1")
         ac_shape_file,ac_name = mandal_map.basic_correction_and_explode()
-        st.text("AC SHAPE FILE")
-        mandal_maps(ac,ac_shape_file,ac_name,"data")
+        # subsetting the base_retro_data as base_retro_1
+        base_retro_ac =return_base_retro_data(base_retro_data=base_retro_data,ac=ac)   
         
-
+        
+        ## Create Mandal Maps
+        if map_type=="Mandal Map":
+            mandal_maps(ac,ac_shape_file,ac_name,"data")
+        ## Create win/loss maps
+        elif map_type == 'Win/Loss': 
+            win_loss_maps(ac_shape_file,base_retro_ac,vill_shp,ac,ac_name,election_type,election_year,"data")
+        ## Create Vote Share Maps
+        elif map_type =='Vote Share':
+            vs_maps_creation(ac_shape_file,base_retro_ac,vill_shp,ac,ac_name,election_type,election_year,"data")
+        else:
+            margin_maps_creation(ac_shape_file,base_retro_ac,vill_shp,ac,ac_name,election_type,election_year,"data")
 
 
 
