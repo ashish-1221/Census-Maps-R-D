@@ -251,7 +251,7 @@ def win_loss_map(ac, vill_shp1, final1, ac_shape_file, ac_name, election_year, e
                            za_points_1.geometry.y,
                            za_points_1["V_ID"]):  # +za_points_2.geometry.x)/2,+za_points_2.geometry.y)/2
 
-        fp = matplotlib.font_manager.FontProperties(fname=r"fonts\FiraSans-ExtraBold.ttf")
+        fp = matplotlib.font_manager.FontProperties(fname=r"fonts/FiraSans-ExtraBold.ttf")
 
         texts.append(plt.text(x, y, label, fontproperties=fp, horizontalalignment='center',
                               fontsize=2.3,  # ))
@@ -308,7 +308,7 @@ def vs_maps(ac, final1, vill_shp1, ac_shape_file, ac_name, election_year, electi
     for x, y, label in zip(za_points_1.geometry.x,
                            za_points_1.geometry.y,
                            za_points_1["V_ID"]):
-        fp = matplotlib.font_manager.FontProperties(fname=r"fonts\FiraSans-ExtraBold.ttf")
+        fp = matplotlib.font_manager.FontProperties(fname=r"fonts/FiraSans-ExtraBold.ttf")
 
         texts.append(plt.text(x, y, label, fontproperties=fp, horizontalalignment='center',
                               fontsize=2.3, path_effects=[pe.withStroke(linewidth=0.6,
