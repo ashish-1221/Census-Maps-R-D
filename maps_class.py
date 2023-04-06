@@ -11,12 +11,12 @@ from matplotlib.lines import Line2D
 from collections import OrderedDict
 
 
-@st.cache_data(persist="disk")
+@st.cache_data(persist=True)
 def return_v_gdf():
     vill_shp = gd.read_file("data/shapefiles/"+"SHP_MadhyaPradesh"+"/"+"VILLAGE_TOWN.shp")
     return vill_shp
 
-@st.cache_data(persist="disk")
+@st.cache_data(persist=True)
 def return_ac_gdf(ac):
     ac_shp = gd.read_file("data\shapefiles\SHP_MadhyaPradesh\AC_POST.shp")
     return ac_shp
