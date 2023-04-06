@@ -452,7 +452,7 @@ def mandal_maps(ac, ac_shape_file, ac_name, final_map_folder_path):
                            za_points_1["V_ID"]):  # +za_points_2.geometry.x)/2,+za_points_2.geometry.y)/2
 
         fp = matplotlib.font_manager.FontProperties(
-            fname=r"fonts\FiraSans-ExtraBold.ttf")
+            fname=r"fonts/FiraSans-ExtraBold.ttf")
 
         texts.append(plt.text(x, y, label, fontproperties=fp, horizontalalignment='center',
                               fontsize=2.3,  # ))
