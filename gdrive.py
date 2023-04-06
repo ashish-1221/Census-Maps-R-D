@@ -180,6 +180,7 @@ class drive_api:
     
     
     # Function to download a specific file and store in a specific path based on fileinfo
+    @st.cache_data(persist=True)
     def export_a_file(self,fileinfo,folder_path):
         print(f"\n\n{fileinfo}")
         # if os.path.exists('token.json'):
